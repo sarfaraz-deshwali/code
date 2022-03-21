@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+
+  <!-- bootstrap -->
+
+  <title>tools</title>
+</head>
+<body class=" bg-dark">
+
+  <!-- HEADER -->
+
+  <div class="p-4 d-flex ">
+    <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Menu
+    </button> <h2 class="text-info  m-auto" >~Local Area~</h2>
+  </div>
+
+  <div class="offcanvas offcanvas-start bg-secondary" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header" >
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body ">
+      <div class="text-white">
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+
+
+  <!-- PHOTO-1 -->
+  <div class="container-fluid">
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide p-5"  data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item opacity-50 active" data-bs-interval="10000">
+          <img style="height: 380px;background-size: cover;
+      background-position: center;"src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img style="height: 380px;background-size: cover;
+      background-position: center;"src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img style="height: 380px;background-size: cover;
+      background-position: center;"src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> 
+
+  </div>
+  <!-- PHOTO-1 -->
+
+
+  <!-- photo-2-->
+  <div>
+    <div class="row g-0 p-4 bg-dark position-relative ">
+      <div class="col-md-6 mb-md-0 p-md-4">
+        <img  style="height: 170px ; "src="https://www.capturelandscapes.com/wp-content/plugins/td-composer/legacy/common/wp_booster/wp-admin/images/panel/bg/bg-red.jpg" class="w-100" alt="asa h kya">
+      </div>
+      <div class="col-md-6 p-4 ps-md-0  text-white">
+        <h5 class="mt-0 ">Columns with stretched link</h5>
+        <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+        <a href="#" class="stretched-link">Go somewhere</a>
+      </div>
+
+
+      <div class="row g-0 p-4 bg-dark position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img  style="height: 170px; "src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxgt0g2WXfdNl8lvNmmpnyt-V8uDCnjOAoExwj8eHeuUr7an1_ukxF4mqm17bioiKxEAE&usqp=CAU" class="w-100" alt="asa h kya">
+        </div>
+        <div class="col-md-6 p-4 ps-md-0 text-white">
+          <h5 class="mt-0 ">Columns with stretched link</h5>
+          <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+
+
+        <div class="row g-0 p-4 bg-dark position-relative">
+          <div class="col-md-6 mb-md-0 p-md-4">
+            <img  style="height: 170px; "src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9HFnQ8x1qKO0lmQw1A5Sch18rJyffb4zr7KrcmD3gdwgrJ8JSsHeJdDcippt39NNfF6s&usqp=CAU" class="w-100" alt="asa h kya">
+          </div>
+          <div class="col-md-6 p-4 ps-md-0 text-white">
+            <h5 class="mt-0 ">Columns with stretched link</h5>
+            <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+            <a href="#" class="stretched-link">Go somewhere</a>
+          </div></div>
+        </div>
+      </div>
+    </div>
+</div>
+      <!-- photo-2-->
+
+
+<!-- MAIN -->
+<main class="container text-white">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns=""  style="background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZ0vnid2sZ0NCoC8ykbiQz5I9-D7X3ay3Zw&usqp=CAU')"text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Design</strong>
+          <h3 class="mb-0">Post title</h3>
+          <div class="mb-1 text-muted">Nov 11</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="" style="background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgX4Hewj4hT6bO7qwOwZT-kmh_fg5pb3ofig&usqp=CAU')"text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        From the Firehose
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Sample blog post</h2>
+        <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+
+        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+        <hr>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h2>Blockquotes</h2>
+        <p>This is an example blockquote in action:</p>
+        <blockquote class="blockquote">
+          <p>Quoted text goes here.</p>
+        </blockquote>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Example lists</h3>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+        <ul>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ul>
+        <p>And this is an ordered list:</p>
+        <ol>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ol>
+        <p>And this is a definition list:</p>
+        <dl>
+          <dt>HyperText Markup Language (HTML)</dt>
+          <dd>The language used to describe and define the content of a Web page</dd>
+          <dt>Cascading Style Sheets (CSS)</dt>
+          <dd>Used to describe the appearance of Web content</dd>
+          <dt>JavaScript (JS)</dt>
+          <dd>The programming language used to build advanced Web sites and applications</dd>
+        </dl>
+        <h2>Inline HTML elements</h2>
+        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
+        <ul>
+          <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
+          <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
+          <li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code class="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code class="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
+          <li>Citations, like <cite>— Mark Otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
+          <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
+          <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+        </ul>
+        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
+        <h2>Heading</h2>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Sub-heading</h3>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <pre><code>Example code block</code></pre>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">Another blog post</h2>
+        <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <blockquote>
+          <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
+        </blockquote>
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <h3>Example table</h3>
+        <p>And don't forget about tables in these posts:</p>
+        <table class="table text-white">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Upvotes</th>
+              <th>Downvotes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alice</td>
+              <td>10</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Bob</td>
+              <td>4</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Charlie</td>
+              <td>7</td>
+              <td>9</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Totals</td>
+              <td>21</td>
+              <td>23</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title">New feature</h2>
+        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <ul>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ul>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-secondary disabled">Newer</a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4 text-dark">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="fst-italic">About</h4>
+          <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Archives</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#">March 2021</a></li>
+            <li><a href="#">February 2021</a></li>
+            <li><a href="#">January 2021</a></li>
+            <li><a href="#">December 2020</a></li>
+            <li><a href="#">November 2020</a></li>
+            <li><a href="#">October 2020</a></li>
+            <li><a href="#">September 2020</a></li>
+            <li><a href="#">August 2020</a></li>
+            <li><a href="#">July 2020</a></li>
+            <li><a href="#">June 2020</a></li>
+            <li><a href="#">May 2020</a></li>
+            <li><a href="#">April 2020</a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- MAIN -->
+
+
+
+<!-- FOOTER-->
+
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  </footer>
+
+
+<!-- FOOTER-->
+
+
+  </body>
+  </htm>
